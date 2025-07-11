@@ -1,7 +1,7 @@
 def find_max_num(array):
     max_num = array[0]
 
-    for number in array:
+    for number in array:  # 시간복잡도 - O(N)
         if number > max_num:
             max_num = number
 

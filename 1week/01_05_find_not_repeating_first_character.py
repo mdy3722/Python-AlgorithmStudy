@@ -7,8 +7,8 @@ def find_not_repeating_first_character(string):
     # 근데 이 경우 첫 알파벳이 c인지 d인지 알 수 없음 -> 다시 한 번 반복을 통해 누가 먼저 나왔는지를 체크해야...
     # 결론 : 빈도수를 찾고 빈도수가 1인 알파벳들 중에서 string에서 먼저 뭐가 나왔는지를 ,,
     occurence_Array = find_alphabet_occurrence_array(string)
-    not_repeating_character_Array = []
-    for index in range(len(occurence_Array)):   # O(1)
+    not_repeating_character_Array = [] 
+    for index in range(len(occurence_Array)):   # O(1) : occurence_Array는 항상 26의 크기기 때문이다.
         alphabet_occurence = occurence_Array[index]
         if alphabet_occurence == 1:
             not_repeating_character_Array.append(chr(ord('a')+index))

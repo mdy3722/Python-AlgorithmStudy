@@ -17,7 +17,7 @@ def find_max_plus_or_multiply(array):
     # 이 부분을 채워보세요!
     sum = 0         # 대입 연산 1
     for num in array:       # N 길이만큼 비교
-        if num <= 1 or sum <= 1:    # 비교 <- 이게 하이라이트트
+        if num <= 1 or sum <= 1:    # 비교 <- 이게 하이라이트
             sum += num  # 대입
         else:
             sum *= num  # 대입
