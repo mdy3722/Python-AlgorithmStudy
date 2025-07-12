@@ -16,7 +16,7 @@ def is_available_to_order(menus, orders):
 """
 
 """딩코님 코드 -> SET 활용"""
-# 리스트보다 set이 탐색이 빠름름
+# 리스트보다 set이 탐색이 빠름
 def is_available_to_order(menus, orders):
     menus_set = set(menus)   # 정렬 + 중복 제거 O(N)
     for order in orders:    # O(M)

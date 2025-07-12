@@ -18,7 +18,7 @@ i = 2, j = 0 1 -> i - j = 2, 1
 
 def insertion_sort(array):
     n = len(array)
-    for i in (1, n):
+    for i in range(1, n):
         for j in range(i):
             if array[i - j] < array[i - j - 1]:
                 array[i - j], array[i - j - 1] = array[i - j - 1], array[i - j]
