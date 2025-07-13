@@ -52,3 +52,10 @@ genre_total_play_dict = {"힙합": 1, "발라드": 10}
 sorted_genre_play_array = sorted(genre_total_play_dict.items(), key=lambda item: item[1], reverse=True)   # item[0]이면 "장르"로 정렬, item[1]이라서 play(int)로 정렬
 print(sorted_genre_play_array)    # {"발라드": 10, "힙합": 1}
 ```
+
+### join 함수
+```python
+from collections import deque
+queue = deque(string)   # 이렇게 큐에 string 삽입 가능, ex. ['홍', '길', '동']
+v = ''.join(queue)    # join 함수 : 리스트를 입력했을 때, 그 리스트의 원소들을 합쳐서 문자열로 반환
+```
