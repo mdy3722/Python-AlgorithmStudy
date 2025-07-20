@@ -15,7 +15,7 @@ SELECT
 FROM ECOLI_DATA
 ORDER BY ID;
 
--- NTILE 사용 x 버전
+-- NTILE 사용 x 버전 - RANK() 사용
 WITH ranked AS(
   SELECT ID, SIZE_OF_COLONY, RANK() OVER (ORDER BY SIZE_OF_COLONY DESC) AS r,
           COUNT(*) OVER () AS total

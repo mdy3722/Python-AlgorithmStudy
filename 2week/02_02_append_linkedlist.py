@@ -3,7 +3,6 @@ class Node:
         self.data = data
         self.next = None
 
-
 node = Node(5)
 next_node = Node(3)
 node.next = next_node
